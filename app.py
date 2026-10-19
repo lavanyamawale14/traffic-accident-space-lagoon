@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template
 from pathlib import Path
 import json
