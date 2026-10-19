@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Accident Analytics | BDA Project</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">🚦 Traffic<span>Analytics</span></div>
+
+    <div class="nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/analysis">Analysis</a>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="tag">BIG DATA ANALYTICS PROJECT</div>
+
+        <h1>
+            Making Roads Safer <br>
+            Through <span>Big Data.</span>
+        </h1>
+
+        <p>
+            An intelligent traffic accident analytics platform
+            powered by Hadoop and Apache Spark. Explore accident
+            patterns, analyze severity, and discover insights
+            through interactive data visualization.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/dashboard" class="primary-btn">
+                Explore Dashboard →
+            </a>
+
+            <a href="/analysis" class="secondary-btn">
+                View Analysis
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-visual">
+        <div class="visual-card">
+            <div class="visual-icon">
+    <img
+        src="{{ url_for('static', filename='images/traffic-dashboard-icon.png') }}"
+        alt="Traffic Analytics Dashboard"
+        class="dashboard-icon"
+    >
+</div>
+            <h2>Traffic Intelligence</h2>
+            <p>Transforming accident data into meaningful insights.</p>
+
+            <div class="tech-tags">
+                <span>Hadoop</span>
+                <span>Apache Spark</span>
+                <span>Python</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="features">
+
+    <h2>Powerful Analytics Features</h2>
+    <p class="section-subtitle">
+        Discover how big data helps us understand road safety.
+    </p>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Accident Trends</h3>
+            <p>Explore accident patterns across different time periods.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Apache Spark</h3>
+            <p>Process large-scale traffic datasets efficiently.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🗄️</div>
+            <h3>Hadoop HDFS</h3>
+            <p>Distributed storage for large accident datasets.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Hotspot Detection</h3>
+            <p>Identify accident-prone locations and risk factors.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>Traffic Accident Analytics | BDA Lab Project</p>
+    <p>Built using Hadoop • Apache Spark • Flask</p>
+</footer>
+
+</body>
+</html>

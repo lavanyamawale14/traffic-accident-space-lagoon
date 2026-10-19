@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Analysis | Traffic Analytics</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        🚦 Traffic<span>Analytics</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/analysis" class="active">Analysis</a>
+    </div>
+</nav>
+
+<section class="features dashboard-section">
+
+    <div class="tag">ADVANCED SPARK ANALYTICS</div>
+
+    <h2>Indian Road Accident Analysis</h2>
+
+    <p class="section-subtitle">
+        Explore accident trends, contributing factors
+        and road safety patterns using Apache Spark.
+    </p>
+
+    <div class="dashboard-charts">
+
+        <div class="feature-card chart-card">
+            <h3>Year-wise Accident Trends</h3>
+            <div class="chart-container">
+                <canvas id="yearChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>Hourly Accident Distribution</h3>
+            <div class="chart-container">
+                <canvas id="hourChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>Major Accident Causes</h3>
+            <div class="chart-container">
+                <canvas id="causeChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>Accidents by Road Type</h3>
+            <div class="chart-container">
+                <canvas id="roadChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>Day-wise Accident Distribution</h3>
+            <div class="chart-container">
+                <canvas id="dayChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>Road Type vs Accident Severity</h3>
+            <div class="chart-container">
+                <canvas id="severityRoadChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="dashboard-note">
+        Source: Indian Road Accident community dataset |
+        Processed using Apache Spark |
+        Invalid date records: {{ data.invalid_dates }}
+    </p>
+
+</section>
+
+<script>
+    const analysisData = {{ data | tojson }};
+</script>
+
+<script src="{{ url_for('static', filename='js/analysis.js') }}"></script>
+
+</body>
+</html>

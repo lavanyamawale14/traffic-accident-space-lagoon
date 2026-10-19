@@ -1,0 +1,232 @@
+{
+  "yearly": [
+    {
+      "name": "2022",
+      "count": 6117
+    },
+    {
+      "name": "2023",
+      "count": 6088
+    },
+    {
+      "name": "2024",
+      "count": 6061
+    },
+    {
+      "name": "2025",
+      "count": 1734
+    }
+  ],
+  "hourly": [
+    {
+      "name": "0",
+      "count": 840
+    },
+    {
+      "name": "1",
+      "count": 859
+    },
+    {
+      "name": "2",
+      "count": 888
+    },
+    {
+      "name": "3",
+      "count": 824
+    },
+    {
+      "name": "4",
+      "count": 805
+    },
+    {
+      "name": "5",
+      "count": 827
+    },
+    {
+      "name": "6",
+      "count": 856
+    },
+    {
+      "name": "7",
+      "count": 786
+    },
+    {
+      "name": "8",
+      "count": 849
+    },
+    {
+      "name": "9",
+      "count": 786
+    },
+    {
+      "name": "10",
+      "count": 789
+    },
+    {
+      "name": "11",
+      "count": 841
+    },
+    {
+      "name": "12",
+      "count": 866
+    },
+    {
+      "name": "13",
+      "count": 878
+    },
+    {
+      "name": "14",
+      "count": 838
+    },
+    {
+      "name": "15",
+      "count": 811
+    },
+    {
+      "name": "16",
+      "count": 787
+    },
+    {
+      "name": "17",
+      "count": 861
+    },
+    {
+      "name": "18",
+      "count": 823
+    },
+    {
+      "name": "19",
+      "count": 840
+    },
+    {
+      "name": "20",
+      "count": 838
+    },
+    {
+      "name": "21",
+      "count": 830
+    },
+    {
+      "name": "22",
+      "count": 853
+    },
+    {
+      "name": "23",
+      "count": 825
+    }
+  ],
+  "causes": [
+    {
+      "name": "distraction",
+      "count": 4026
+    },
+    {
+      "name": "overspeeding",
+      "count": 4025
+    },
+    {
+      "name": "weather",
+      "count": 3997
+    },
+    {
+      "name": "drunk driving",
+      "count": 3978
+    },
+    {
+      "name": "poor road",
+      "count": 3974
+    }
+  ],
+  "road_types": [
+    {
+      "name": "urban",
+      "count": 6745
+    },
+    {
+      "name": "rural",
+      "count": 6639
+    },
+    {
+      "name": "highway",
+      "count": 6616
+    }
+  ],
+  "weekdays": [
+    {
+      "name": "Monday",
+      "count": 2966
+    },
+    {
+      "name": "Friday",
+      "count": 2879
+    },
+    {
+      "name": "Tuesday",
+      "count": 2871
+    },
+    {
+      "name": "Saturday",
+      "count": 2867
+    },
+    {
+      "name": "Sunday",
+      "count": 2856
+    },
+    {
+      "name": "Thursday",
+      "count": 2835
+    },
+    {
+      "name": "Wednesday",
+      "count": 2726
+    }
+  ],
+  "severity_by_road": [
+    {
+      "road_type": "highway",
+      "severity": "fatal",
+      "count": 983
+    },
+    {
+      "road_type": "highway",
+      "severity": "major",
+      "count": 1967
+    },
+    {
+      "road_type": "highway",
+      "severity": "minor",
+      "count": 3666
+    },
+    {
+      "road_type": "rural",
+      "severity": "fatal",
+      "count": 965
+    },
+    {
+      "road_type": "rural",
+      "severity": "major",
+      "count": 2014
+    },
+    {
+      "road_type": "rural",
+      "severity": "minor",
+      "count": 3660
+    },
+    {
+      "road_type": "urban",
+      "severity": "fatal",
+      "count": 1039
+    },
+    {
+      "road_type": "urban",
+      "severity": "major",
+      "count": 2007
+    },
+    {
+      "road_type": "urban",
+      "severity": "minor",
+      "count": 3699
+    }
+  ],
+  "invalid_dates": 0
+}

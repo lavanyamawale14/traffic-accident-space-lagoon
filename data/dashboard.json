@@ -1,0 +1,103 @@
+{
+  "total_accidents": 20000,
+  "severity": [
+    {
+      "name": "minor",
+      "count": 11025
+    },
+    {
+      "name": "major",
+      "count": 5988
+    },
+    {
+      "name": "fatal",
+      "count": 2987
+    }
+  ],
+  "states": [
+    {
+      "name": "Maharashtra",
+      "count": 5009
+    },
+    {
+      "name": "Punjab",
+      "count": 2577
+    },
+    {
+      "name": "Tamil Nadu",
+      "count": 2575
+    },
+    {
+      "name": "West Bengal",
+      "count": 2559
+    },
+    {
+      "name": "Karnataka",
+      "count": 2438
+    },
+    {
+      "name": "Delhi",
+      "count": 2433
+    },
+    {
+      "name": "Telangana",
+      "count": 2409
+    }
+  ],
+  "weather": [
+    {
+      "name": "clear",
+      "count": 6690
+    },
+    {
+      "name": "rain",
+      "count": 6677
+    },
+    {
+      "name": "fog",
+      "count": 6633
+    }
+  ],
+  "hotspots": [
+    {
+      "city": "Chandigarh",
+      "state": "Punjab",
+      "count": 2577
+    },
+    {
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "count": 2575
+    },
+    {
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "count": 2559
+    },
+    {
+      "city": "Pune",
+      "state": "Maharashtra",
+      "count": 2517
+    },
+    {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "count": 2492
+    },
+    {
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "count": 2438
+    },
+    {
+      "city": "Delhi",
+      "state": "Delhi",
+      "count": 2433
+    },
+    {
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "count": 2409
+    }
+  ]
+}

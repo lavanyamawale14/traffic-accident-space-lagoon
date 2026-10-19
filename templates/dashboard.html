@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Traffic Analytics</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        🚦 Traffic<span>Analytics</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dashboard" class="active">Dashboard</a>
+        <a href="/analysis">Analysis</a>
+    </div>
+</nav>
+
+
+<!-- DASHBOARD -->
+<section class="features dashboard-section">
+
+    <div class="tag">APACHE SPARK ANALYTICS</div>
+
+    <h2>Indian Road Accident Dashboard</h2>
+
+    <p class="section-subtitle">
+        Data-driven insights generated using Apache Spark
+        from the Indian Road Accident Dataset.
+    </p>
+
+
+    <!-- KPI CARDS -->
+    <div class="dashboard-kpis">
+
+        <div class="feature-card kpi-card">
+            <div class="kpi-icon">🚗</div>
+            <h3>Total Accidents</h3>
+            <div class="kpi-number">
+                {{ "{:,}".format(data.total_accidents) }}
+            </div>
+        </div>
+
+        {% for item in data.severity %}
+
+        <div class="feature-card kpi-card">
+            <div class="kpi-icon">📊</div>
+
+            <h3>{{ item.name | title }} Accidents</h3>
+
+            <div class="kpi-number">
+                {{ "{:,}".format(item["count"]) }}
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+
+    <!-- CHARTS -->
+    <div class="dashboard-charts">
+
+        <div class="feature-card chart-card">
+            <h3>Accident Severity Distribution</h3>
+            <div class="chart-container">
+                <canvas id="severityChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>State-wise Accident Analysis</h3>
+            <div class="chart-container">
+                <canvas id="stateChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>Weather Impact Analysis</h3>
+            <div class="chart-container">
+                <canvas id="weatherChart"></canvas>
+            </div>
+        </div>
+
+        <div class="feature-card chart-card">
+            <h3>Top Accident Hotspots</h3>
+            <div class="chart-container">
+                <canvas id="hotspotChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="dashboard-note">
+        Source: Indian Road Accident community dataset |
+        Processed using Apache Spark |
+        {{ "{:,}".format(data.total_accidents) }} records
+    </p>
+
+</section>
+
+
+<!-- PASS ACTUAL SPARK RESULTS TO JAVASCRIPT -->
+<script>
+    const dashboardData = {{ data | tojson }};
+</script>
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+</html>
